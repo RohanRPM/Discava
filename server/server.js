@@ -10,7 +10,7 @@ const app = express();
 const port = 4000;
 
 // MongoDB connection
-const dbURI = 'mongodb+srv://rohanmeshrampersonal1:Fo6Hc5EZqj13bx1N@cluster0.pqy9swi.mongodb.net/Discava';
+const dbURI = '';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('DB Connection Success'))
   .catch(err => console.log('DB Connection Failed', err));
