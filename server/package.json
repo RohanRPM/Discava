@@ -24,10 +24,12 @@
 		"express-fileupload": "^1.4.0",
 		"jsonwebtoken": "^9.0.0",
 		"mongoose": "^7.0.3",
+		"multer": "^1.4.5-lts.1",
 		"node-schedule": "^2.1.1",
 		"nodemailer": "^6.9.1",
 		"otp-generator": "^4.0.1",
-		"razorpay": "^2.8.6"
+		"razorpay": "^2.8.6",
+		"rimraf": "^6.0.1"
 	},
 	"devDependencies": {
 		"nodemon": "^3.1.4"
