@@ -14,7 +14,7 @@ Make sure you have Node.js and npm installed on your machine.
 
 1. Clone the repository to your local machine:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/RohanRPM/Discava.git
    cd Discava
 
 2. Install dependencies:
