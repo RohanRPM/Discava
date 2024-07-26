@@ -1,16 +1,16 @@
-import signupImg from "../assets/Images/signup.webp"
-import Template from "../components/core/Auth/Template"
+import signupImg from "../assets/Images/signup.webp";
+import Template from "../components/core/Auth/Template";
 
 function Signup() {
   return (
     <Template
-      title="Join the millions learning to code with StudyNotion for free"
-      description1="Build skills for today, tomorrow, and beyond."
-      description2="Education to future-proof your career."
+      title="Join Discava Today"
+      description1="Unlock access to cutting-edge solutions and resources for your business."
+      description2="Sign up to start transforming your business with our innovative tools."
       image={signupImg}
       formType="signup"
     />
-  )
+  );
 }
 
-export default Signup
+export default Signup;
