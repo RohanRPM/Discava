@@ -12,14 +12,14 @@ const BottomFooter = ["Privacy Policy", "Cookie Policy", "Terms"];
 const Resources = [
   "Articles",
   "Blog",
-  "Chart Sheet",
-  "Code challenges",
-  "Docs",
+  "Case Studies",
+  "Challenges",
+  "Documentation",
   "Projects",
   "Videos",
   "Workspaces",
 ];
-const Plans = ["Paid memberships", "For students", "Business solutions"];
+const Plans = ["Memberships", "For Students", "Business Solutions"];
 const Community = ["Forums", "Chapters", "Events"];
 
 const Footer = () => {
@@ -30,18 +30,18 @@ const Footer = () => {
           {/* Section 1 */}
           <div className="lg:w-[50%] flex flex-wrap flex-row justify-between lg:border-r lg:border-richblack-700 pl-3 lg:pr-5 gap-3">
             <div className="w-[30%] flex flex-col gap-3 lg:w-[30%] mb-7 lg:pl-0">
-              <img src={Logo} alt="" className="object-contain" />
+              <img src={Logo} alt="Discava Logo" className="object-contain" />
               <h1 className="text-richblack-50 font-semibold text-[16px]">
                 Company
               </h1>
               <div className="flex flex-col gap-2">
-                {["About", "Careers", "Affiliates"].map((ele, i) => {
+                {["About Us", "Careers", "Partners"].map((ele, i) => {
                   return (
                     <div
                       key={i}
                       className="text-[14px] cursor-pointer hover:text-richblack-50 transition-all duration-200"
                     >
-                      <Link to={ele.toLowerCase()}>{ele}</Link>
+                      <Link to={ele.split(" ").join("-").toLowerCase()}>{ele}</Link>
                     </div>
                   );
                 })}
@@ -52,7 +52,6 @@ const Footer = () => {
                 <FaTwitter />
                 <FaYoutube />
               </div>
-              <div></div>
             </div>
 
             <div className="w-[48%] lg:w-[30%] mb-7 lg:pl-0">
@@ -150,7 +149,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-between w-11/12 max-w-maxContent text-richblack-400 mx-auto  pb-14 text-sm">
+      <div className="flex flex-row items-center justify-between w-11/12 max-w-maxContent text-richblack-400 mx-auto pb-14 text-sm">
         {/* Section 1 */}
         <div className="flex justify-between lg:items-start items-center flex-col lg:flex-row gap-3 w-full">
           <div className="flex flex-row">
@@ -158,13 +157,13 @@ const Footer = () => {
               return (
                 <div
                   key={i}
-                  className={` ${
+                  className={`${
                     BottomFooter.length - 1 === i
                       ? ""
                       : "border-r border-richblack-700 cursor-pointer hover:text-richblack-50 transition-all duration-200"
-                  } px-3 `}
+                  } px-3`}
                 >
-                  <Link to={ele.split(" ").join("-").toLocaleLowerCase()}>
+                  <Link to={ele.split(" ").join("-").toLowerCase()}>
                     {ele}
                   </Link>
                 </div>
@@ -172,7 +171,9 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="text-center">Made with ❤️ CodeHelp © 2023 Studynotion</div>
+          <div className="text-center">
+            Made with ❤️ Discava © 2024
+          </div>
         </div>
       </div>
     </div>

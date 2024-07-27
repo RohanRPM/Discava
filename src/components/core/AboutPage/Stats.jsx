@@ -1,10 +1,10 @@
 import React from "react";
 
 const Stats = [
-  { count: "5K", label: "Active Students" },
-  { count: "10+", label: "Mentors" },
-  { count: "200+", label: "Courses" },
-  { count: "50+", label: "Awards" },
+  { count: "5K", label: "Active Customers" },
+  { count: "10+", label: "Stores" },
+  { count: "200+", label: "Products" },
+  { count: "5+", label: "Sections" },
 ];
 
 const StatsComponenet = () => {

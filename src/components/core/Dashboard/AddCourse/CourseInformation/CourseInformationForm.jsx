@@ -163,24 +163,24 @@ export default function CourseInformationForm() {
       {/* Course Title */}
       <div className="flex flex-col space-y-2">
         <label className="text-sm text-richblack-5" htmlFor="courseTitle">
-          Course Title <sup className="text-pink-200">*</sup>
+          Product Title <sup className="text-pink-200">*</sup>
         </label>
         <input
           id="courseTitle"
-          placeholder="Enter Course Title"
+          placeholder="Enter Product Title"
           {...register("courseTitle", { required: true })}
           className="form-style w-full"
         />
         {errors.courseTitle && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Course title is required
+            Product title is required
           </span>
         )}
       </div>
       {/* Course Short Description */}
       <div className="flex flex-col space-y-2">
         <label className="text-sm text-richblack-5" htmlFor="courseShortDesc">
-          Course Short Description <sup className="text-pink-200">*</sup>
+          Product Short Description <sup className="text-pink-200">*</sup>
         </label>
         <textarea
           id="courseShortDesc"
@@ -190,19 +190,19 @@ export default function CourseInformationForm() {
         />
         {errors.courseShortDesc && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Course Description is required
+            Product Description is required
           </span>
         )}
       </div>
       {/* Course Price */}
       <div className="flex flex-col space-y-2">
         <label className="text-sm text-richblack-5" htmlFor="coursePrice">
-          Course Price <sup className="text-pink-200">*</sup>
+          Product Price <sup className="text-pink-200">*</sup>
         </label>
         <div className="relative">
           <input
             id="coursePrice"
-            placeholder="Enter Course Price"
+            placeholder="Enter Product Price"
             {...register("coursePrice", {
               required: true,
               valueAsNumber: true,
@@ -216,7 +216,7 @@ export default function CourseInformationForm() {
         </div>
         {errors.coursePrice && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Course Price is required
+            Product Price is required
           </span>
         )}
       </div>
@@ -226,7 +226,7 @@ export default function CourseInformationForm() {
           Course Category <sup className="text-pink-200">*</sup>
         </label>
         <select
-          {...register("courseCategory", { required: true })}
+          {...register("courseCategory", { required: false })}
           defaultValue=""
           id="courseCategory"
           className="form-style w-full"
@@ -243,7 +243,7 @@ export default function CourseInformationForm() {
         </select>
         {errors.courseCategory && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Course Category is required
+            Product Category is required
           </span>
         )}
       </div>
@@ -269,17 +269,17 @@ export default function CourseInformationForm() {
       {/* Benefits of the course */}
       <div className="flex flex-col space-y-2">
         <label className="text-sm text-richblack-5" htmlFor="courseBenefits">
-          Benefits of the course <sup className="text-pink-200">*</sup>
+          Benefits of the Product <sup className="text-pink-200">*</sup>
         </label>
         <textarea
           id="courseBenefits"
-          placeholder="Enter benefits of the course"
+          placeholder="Enter benefits of the Product"
           {...register("courseBenefits", { required: true })}
           className="form-style resize-x-none min-h-[130px] w-full"
         />
         {errors.courseBenefits && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Benefits of the course is required
+            Benefits of the Product is required
           </span>
         )}
       </div>
@@ -300,7 +300,7 @@ export default function CourseInformationForm() {
             disabled={loading}
             className={`flex cursor-pointer items-center gap-x-2 rounded-md bg-richblack-300 py-[8px] px-[20px] font-semibold text-richblack-900`}
           >
-            Continue Wihout Saving
+            Continue Without Saving
           </button>
         )}
         <IconBtn

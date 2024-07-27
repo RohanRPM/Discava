@@ -5,42 +5,42 @@ import CTAButton from "../../../components/core/HomePage/Button";
 const LearningGridArray = [
   {
     order: -1,
-    heading: "Unlock the Future of Learning",
+    heading: "Transform Your Shopping Experience",
     highliteText: "With Discava",
     description:
-      "Discava partners with top institutions and industry leaders to offer innovative and flexible online courses tailored to the needs of today's professionals.",
-    BtnText: "Explore Courses",
-    BtnLink: "/courses",
+      "Discover how Discava’s innovative technology enhances your eCommerce journey. From advanced object detection to finding the nearest stores, we bring you a smarter way to shop.",
+    BtnText: "Explore Features",
+    BtnLink: "/features",
   },
   {
     order: 1,
-    heading: "Curriculum Designed for Success",
+    heading: "Advanced Object Detection",
     description:
-      "Our curriculum is crafted to align with the latest industry trends and demands, ensuring that you gain the skills employers are looking for.",
+      "Utilize our cutting-edge object detection technology to accurately identify products and get detailed information instantly. Enhance your shopping efficiency with precision.",
   },
   {
     order: 2,
-    heading: "Innovative Learning Methods",
+    heading: "Find Stores Nearby",
     description:
-      "At Discava, we use cutting-edge technology and teaching methods to make learning engaging and effective, no matter where you are.",
+      "Easily locate stores in your vicinity with the products you're interested in. Our smart search feature connects you with nearby retailers to make your shopping seamless.",
   },
   {
     order: 3,
-    heading: "Certification That Matters",
+    heading: "Seamless Shopping Experience",
     description:
-      "Earn credentials that are recognized and respected by employers around the globe. Our certifications validate your skills and enhance your career prospects.",
+      "Enjoy a streamlined and intuitive shopping experience. Our platform is designed to make product discovery and purchase easy and enjoyable.",
   },
   {
     order: 4,
-    heading: "Real-Time Feedback and Evaluation",
+    heading: "Real-Time Product Updates",
     description:
-      "Get instant feedback on your progress with our auto-grading system, designed to help you improve and succeed quickly.",
+      "Stay informed with real-time updates on product availability and store offers. Get the latest information at your fingertips and never miss out on great deals.",
   },
   {
     order: 5,
-    heading: "Career-Ready Skills",
+    heading: "Customer-Centric Features",
     description:
-      "Prepare for the future with skills that are in high demand. Discava’s courses are designed to equip you with practical knowledge that can be applied immediately in the workplace.",
+      "Experience features tailored to enhance your shopping journey. From personalized recommendations to easy store navigation, we prioritize your convenience and satisfaction.",
   },
 ];
 
