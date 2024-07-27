@@ -71,12 +71,12 @@ function SignupForm() {
   const tabData = [
     {
       id: 1,
-      tabName: "Student",
+      tabName: "Customer",
       type: ACCOUNT_TYPE.STUDENT,
     },
     {
       id: 2,
-      tabName: "Instructor",
+      tabName: "Distributor",
       type: ACCOUNT_TYPE.INSTRUCTOR,
     },
   ]

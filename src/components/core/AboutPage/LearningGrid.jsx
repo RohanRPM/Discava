@@ -5,42 +5,42 @@ import CTAButton from "../../../components/core/HomePage/Button";
 const LearningGridArray = [
   {
     order: -1,
-    heading: "World-Class Learning for",
-    highliteText: "Anyone, Anywhere",
+    heading: "Unlock the Future of Learning",
+    highliteText: "With Discava",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.",
-    BtnText: "Learn More",
-    BtnLink: "/",
+      "Discava partners with top institutions and industry leaders to offer innovative and flexible online courses tailored to the needs of today's professionals.",
+    BtnText: "Explore Courses",
+    BtnLink: "/courses",
   },
   {
     order: 1,
-    heading: "Curriculum Based on Industry Needs",
+    heading: "Curriculum Designed for Success",
     description:
-      "Save time and money! The Belajar curriculum is made to be easier to understand and in line with industry needs.",
+      "Our curriculum is crafted to align with the latest industry trends and demands, ensuring that you gain the skills employers are looking for.",
   },
   {
     order: 2,
-    heading: "Our Learning Methods",
+    heading: "Innovative Learning Methods",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "At Discava, we use cutting-edge technology and teaching methods to make learning engaging and effective, no matter where you are.",
   },
   {
     order: 3,
-    heading: "Certification",
+    heading: "Certification That Matters",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "Earn credentials that are recognized and respected by employers around the globe. Our certifications validate your skills and enhance your career prospects.",
   },
   {
     order: 4,
-    heading: `Rating "Auto-grading"`,
+    heading: "Real-Time Feedback and Evaluation",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "Get instant feedback on your progress with our auto-grading system, designed to help you improve and succeed quickly.",
   },
   {
     order: 5,
-    heading: "Ready to Work",
+    heading: "Career-Ready Skills",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "Prepare for the future with skills that are in high demand. Discava’s courses are designed to equip you with practical knowledge that can be applied immediately in the workplace.",
   },
 ];
 

@@ -15,34 +15,9 @@ import InstructorSection from "../components/core/HomePage/InstructorSection"
 import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection"
 import TimelineSection from "../components/core/HomePage/Timeline"
 
-import { useState, useEffect } from "react";
-import axios from "axios"
+
 
 function Home() {
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [detectionResult, setDetectionResult] = useState(null);
-
-  const handleFileChange = (e) => {
-    setSelectedFile(e.target.files[0]);
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append('image', selectedFile);
-
-    try {
-      const response = await axios.post('http://localhost:4000/detect', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      });
-      setDetectionResult(response.data);
-    } catch (error) {
-      console.error('Error uploading image:', error);
-    }
-  };
-
   return (
     <div>
       {/* Section 1 */}
@@ -86,6 +61,8 @@ function Home() {
             muted
             loop
             autoPlay
+            width={"90%"}
+            height={"80%"}
           >
             <source src={Banner} type="video/mp4" />
           </video>

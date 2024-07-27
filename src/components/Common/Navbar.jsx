@@ -6,8 +6,8 @@ import { Link, matchPath, useLocation } from "react-router-dom"
 
 import logo from "../../assets/Logo/Logo-Full-Light.png"
 import { NavbarLinks } from "../../data/navbar-links"
-import { apiConnector } from "../../services/apiConnector"
-import { categories } from "../../services/apis"
+// import { apiConnector } from "../../services/apiConnector"
+// import { categories } from "../../services/apis"
 import { ACCOUNT_TYPE } from "../../utils/constants"
 import ProfileDropdown from "../core/Auth/ProfileDropdown"
 
@@ -43,7 +43,7 @@ function Navbar() {
     ; (async () => {
       setLoading(true)
       try {
-        const res = await apiConnector("GET", categories.CATEGORIES_API)
+        // const res = await apiConnector("GET", categories.CATEGORIES_API)
         // setSubLinks(res.data.data)
       } catch (error) {
         console.log("Could not fetch Categories.", error)
