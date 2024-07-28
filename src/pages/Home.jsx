@@ -92,7 +92,7 @@ function Home() {
               active: false,
             }}
             codeColor={"text-yellow-25"}
-            codeblock={`<!DOCTYPE html>\n <html lang="en">\n<head>\n<title>Welcome to Our Platform</title>\n</head>\n<body>\n<h1><a href="/">Home</a></h1>\n<nav> <a href="/about">About</a> <a href="/services">Services</a> <a href="/contact">Contact</a>\n</nav>\n</body>`}
+            codeblock={`Welcome to Discava, your \n one-stop destination for the \n latest trends and top-quality \n products. From electronics and \n fashion to home essentials \n and more, we've got everything \n you need at unbeatable prices. \n Our user-friendly platform ensures \n a seamless shopping experience, \n making it easy to find \n what you're looking for...!`}
             backgroundGradient={<div className="codeblock1 absolute"></div>}
           />
         </div>
@@ -122,7 +122,7 @@ function Home() {
               active: false,
             }}
             codeColor={"text-white"}
-            codeblock={`import React from "react";\n import CTAButton from "./Button";\nimport { FaArrowRight } from "react-icons/fa";\n\nconst Home = () => {\nreturn (\n<div>Home</div>\n)\n}\nexport default Home;`}
+            codeblock={`At Discava, we prioritize customer \n satisfaction above all. Our dedicated \n team ensures that every product \n listed meets the highest quality \n standards. Enjoy fast and reliable \n shipping with our trusted delivery \n partners. Sign up for exclusive deals \n and stay updated on the latest \n trends. Our secure payment gateway \n guarantees a safe shopping \nexperience...!`}
             backgroundGradient={<div className="codeblock2 absolute"></div>}
           />
         </div>
