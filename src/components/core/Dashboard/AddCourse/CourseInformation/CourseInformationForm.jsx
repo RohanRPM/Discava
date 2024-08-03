@@ -31,6 +31,14 @@ export default function CourseInformationForm() {
   const { course, editCourse } = useSelector((state) => state.course)
   const [loading, setLoading] = useState(false)
   const [courseCategories, setCourseCategories] = useState([])
+  // const courseCategories = [
+  //   { _id: "1", name: "Electronics" },
+  //   { _id: "2", name: "Sports" },
+  //   { _id: "3", name: "Clothes" },
+  //   { _id: "4", name: "Furniture" },
+  //   { _id: "5", name: "Others" },
+  //   // Add more categories as needed
+  // ]
 
   useEffect(() => {
     const getCategories = async () => {

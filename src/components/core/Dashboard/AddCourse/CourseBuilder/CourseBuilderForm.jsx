@@ -88,7 +88,7 @@ export default function CourseBuilderForm() {
     if (
       course.courseContent.some((section) => section.subSection.length === 0)
     ) {
-      toast.error("Please add atleast one lecture in each section")
+      toast.error("Please add atleast one image in each section")
       return
     }
     dispatch(setStep(3))
@@ -101,7 +101,7 @@ export default function CourseBuilderForm() {
 
   return (
     <div className="space-y-8 rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-6">
-      <p className="text-2xl font-semibold text-richblack-5">Course Builder</p>
+      <p className="text-2xl font-semibold text-richblack-5">Product Builder</p>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="flex flex-col space-y-2">
           <label className="text-sm text-richblack-5" htmlFor="sectionName">
@@ -110,7 +110,7 @@ export default function CourseBuilderForm() {
           <input
             id="sectionName"
             disabled={loading}
-            placeholder="Add a section to build your course"
+            placeholder="Add a section to build your product"
             {...register("sectionName", { required: true })}
             className="form-style w-full"
           />

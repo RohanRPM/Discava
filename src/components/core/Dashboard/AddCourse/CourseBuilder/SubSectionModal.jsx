@@ -131,7 +131,7 @@ export default function SubSectionModal({
         {/* Modal Header */}
         <div className="flex items-center justify-between rounded-t-lg bg-richblack-700 p-5">
           <p className="text-xl font-semibold text-richblack-5">
-            {view && "Viewing"} {add && "Adding"} {edit && "Editing"} Lecture
+            {view && "Viewing"} {add && "Adding"} {edit && "Editing"} Image
           </p>
           <button onClick={() => (!loading ? setModalData(null) : {})}>
             <RxCross2 className="text-2xl text-richblack-5" />
@@ -145,7 +145,7 @@ export default function SubSectionModal({
           {/* Lecture Video Upload */}
           <Upload
             name="lectureVideo"
-            label="Lecture Video"
+            label="Images"
             register={register}
             setValue={setValue}
             errors={errors}
@@ -156,37 +156,37 @@ export default function SubSectionModal({
           {/* Lecture Title */}
           <div className="flex flex-col space-y-2">
             <label className="text-sm text-richblack-5" htmlFor="lectureTitle">
-              Lecture Title {!view && <sup className="text-pink-200">*</sup>}
+              Image Title {!view && <sup className="text-pink-200">*</sup>}
             </label>
             <input
               disabled={view || loading}
               id="lectureTitle"
-              placeholder="Enter Lecture Title"
+              placeholder="Enter Image Title"
               {...register("lectureTitle", { required: true })}
               className="form-style w-full"
             />
             {errors.lectureTitle && (
               <span className="ml-2 text-xs tracking-wide text-pink-200">
-                Lecture title is required
+                Image title is required
               </span>
             )}
           </div>
           {/* Lecture Description */}
           <div className="flex flex-col space-y-2">
             <label className="text-sm text-richblack-5" htmlFor="lectureDesc">
-              Lecture Description{" "}
+              Image Description{" "}
               {!view && <sup className="text-pink-200">*</sup>}
             </label>
             <textarea
               disabled={view || loading}
               id="lectureDesc"
-              placeholder="Enter Lecture Description"
+              placeholder="Enter Image Description"
               {...register("lectureDesc", { required: true })}
               className="form-style resize-x-none min-h-[130px] w-full"
             />
             {errors.lectureDesc && (
               <span className="ml-2 text-xs tracking-wide text-pink-200">
-                Lecture Description is required
+                Image Description is required
               </span>
             )}
           </div>
