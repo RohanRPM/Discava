@@ -226,7 +226,7 @@ export default function CourseInformationForm() {
           Course Category <sup className="text-pink-200">*</sup>
         </label>
         <select
-          {...register("courseCategory", { required: false })}
+          {...register("courseCategory", { required: true })}
           defaultValue=""
           id="courseCategory"
           className="form-style w-full"

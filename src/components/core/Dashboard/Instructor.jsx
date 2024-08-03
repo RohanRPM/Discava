@@ -91,7 +91,7 @@ export default function Instructor() {
           <div className="rounded-md bg-richblack-800 p-6">
             {/* Render 3 courses */}
             <div className="flex items-center justify-between">
-              <p className="text-lg font-bold text-richblack-5">Your Courses</p>
+              <p className="text-lg font-bold text-richblack-5">Your Products</p>
               <Link to="/dashboard/my-courses">
                 <p className="text-xs font-semibold text-yellow-50">View All</p>
               </Link>
@@ -110,7 +110,7 @@ export default function Instructor() {
                     </p>
                     <div className="mt-1 flex items-center space-x-2">
                       <p className="text-xs font-medium text-richblack-300">
-                        {course.studentsEnroled.length} students
+                        {course.studentsEnroled.length} customers
                       </p>
                       <p className="text-xs font-medium text-richblack-300">
                         |
@@ -128,11 +128,11 @@ export default function Instructor() {
       ) : (
         <div className="mt-20 rounded-md bg-richblack-800 p-6 py-20">
           <p className="text-center text-2xl font-bold text-richblack-5">
-            You have not created any courses yet
+            You have not added any products yet
           </p>
           <Link to="/dashboard/add-course">
             <p className="mt-1 text-center text-lg font-semibold text-yellow-50">
-              Create a course
+              Add a product
             </p>
           </Link>
         </div>
