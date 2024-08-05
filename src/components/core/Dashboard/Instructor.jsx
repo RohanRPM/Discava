@@ -68,7 +68,7 @@ export default function Instructor() {
               <p className="text-lg font-bold text-richblack-5">Statistics</p>
               <div className="mt-4 space-y-4">
                 <div>
-                  <p className="text-lg text-richblack-200">Total Courses</p>
+                  <p className="text-lg text-richblack-200">Total Products</p>
                   <p className="text-3xl font-semibold text-richblack-50">
                     {courses.length}
                   </p>
