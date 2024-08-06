@@ -74,7 +74,7 @@ export default function Instructor() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-lg text-richblack-200">Total Students</p>
+                  <p className="text-lg text-richblack-200">Total Customers</p>
                   <p className="text-3xl font-semibold text-richblack-50">
                     {totalStudents}
                   </p>

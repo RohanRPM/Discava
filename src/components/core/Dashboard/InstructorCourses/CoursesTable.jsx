@@ -130,9 +130,9 @@ export default function CoursesTable({ courses, setCourses }) {
                     disabled={loading}
                     onClick={() => {
                       setConfirmationModal({
-                        text1: "Do you want to delete this course?",
+                        text1: "Do you want to delete this product?",
                         text2:
-                          "All the data related to this course will be deleted",
+                          "All the data related to this products will be deleted",
                         btn1Text: !loading ? "Delete" : "Loading...  ",
                         btn2Text: "Cancel",
                         btn1Handler: !loading
